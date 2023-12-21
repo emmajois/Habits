@@ -15,6 +15,7 @@
 		2615BADF2B347BBD00B14AA2 /* HabitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BADE2B347BBD00B14AA2 /* HabitsTests.swift */; };
 		2615BAE92B347BBD00B14AA2 /* HabitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BAE82B347BBD00B14AA2 /* HabitsUITests.swift */; };
 		2615BAEB2B347BBD00B14AA2 /* HabitsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BAEA2B347BBD00B14AA2 /* HabitsUITestsLaunchTests.swift */; };
+		2615BAF92B347DA100B14AA2 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BAF82B347DA100B14AA2 /* Habit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		2615BAE42B347BBD00B14AA2 /* HabitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2615BAE82B347BBD00B14AA2 /* HabitsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsUITests.swift; sourceTree = "<group>"; };
 		2615BAEA2B347BBD00B14AA2 /* HabitsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2615BAF82B347DA100B14AA2 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		2615BACA2B347BBC00B14AA2 /* Habits */ = {
 			isa = PBXGroup;
 			children = (
+				2615BAF72B347D8A00B14AA2 /* Model */,
 				2615BACB2B347BBC00B14AA2 /* HabitsApp.swift */,
 				2615BACD2B347BBC00B14AA2 /* ContentView.swift */,
 				2615BACF2B347BBC00B14AA2 /* Item.swift */,
@@ -128,6 +131,14 @@
 				2615BAEA2B347BBD00B14AA2 /* HabitsUITestsLaunchTests.swift */,
 			);
 			path = HabitsUITests;
+			sourceTree = "<group>";
+		};
+		2615BAF72B347D8A00B14AA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2615BAF82B347DA100B14AA2 /* Habit.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			files = (
 				2615BACE2B347BBC00B14AA2 /* ContentView.swift in Sources */,
 				2615BAD02B347BBC00B14AA2 /* Item.swift in Sources */,
+				2615BAF92B347DA100B14AA2 /* Habit.swift in Sources */,
 				2615BACC2B347BBC00B14AA2 /* HabitsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
