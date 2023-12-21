@@ -15,17 +15,17 @@ final class Habit {
     var isCompleted: Bool
     var lastCompletedDate: Date
     var nextCompletedDate: Date
-    var timePeriod: String
     
+    var timePeriods: [HabitTiming]
     var categories: [HabitCategory]
     
-    init(title: String, habitDescription: String, isCompleted: Bool, lastCompletedDate: Date, nextCompletedDate: Date, timePeriod: String, categories: [HabitCategory]) {
+    init(title: String, habitDescription: String, isCompleted: Bool, lastCompletedDate: Date, nextCompletedDate: Date, timePeriods: [HabitTiming], categories: [HabitCategory]) {
         self.title = title
         self.habitDescription = habitDescription
         self.isCompleted = isCompleted
         self.lastCompletedDate = lastCompletedDate
         self.nextCompletedDate = nextCompletedDate
-        self.timePeriod = timePeriod
+        self.timePeriods = timePeriods
         self.categories = categories
     }
 }
@@ -37,8 +37,23 @@ final class HabitCategory {
     @Relationship(inverse: \Habit.categories)
     var habits: [Habit]
     
-    init(categoryName: String, habits: [Habit]) {
+    init(categoryName: String, habits: [Habit] = []) {
         self.categoryName = categoryName
+        self.habits = habits
+    }
+}
+
+@Model
+final class HabitTiming {
+    var timingName: String
+    var timingModifier: Int
+    
+    @Relationship(inverse: \Habit.timePeriods)
+    var habits: [Habit]
+    
+    init(timingName: String, timingModifier: Int, habits: [Habit] = []) {
+        self.timingName = timingName
+        self.timingModifier = timingModifier
         self.habits = habits
     }
 }
