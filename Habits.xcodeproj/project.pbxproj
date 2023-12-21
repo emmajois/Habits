@@ -17,6 +17,7 @@
 		2615BAEB2B347BBD00B14AA2 /* HabitsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BAEA2B347BBD00B14AA2 /* HabitsUITestsLaunchTests.swift */; };
 		2615BAF92B347DA100B14AA2 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BAF82B347DA100B14AA2 /* Habit.swift */; };
 		2615BB012B34822E00B14AA2 /* EmmasHabits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB002B34822E00B14AA2 /* EmmasHabits.swift */; };
+		2615BB052B3485F300B14AA2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB042B3485F300B14AA2 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		2615BAEA2B347BBD00B14AA2 /* HabitsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2615BAF82B347DA100B14AA2 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		2615BB002B34822E00B14AA2 /* EmmasHabits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmasHabits.swift; sourceTree = "<group>"; };
+		2615BB042B3485F300B14AA2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +102,12 @@
 		2615BACA2B347BBC00B14AA2 /* Habits */ = {
 			isa = PBXGroup;
 			children = (
-				2615BAFD2B3481BD00B14AA2 /* Utilities */,
 				2615BAF72B347D8A00B14AA2 /* Model */,
+				2615BB032B3485D200B14AA2 /* View */,
+				2615BAFD2B3481BD00B14AA2 /* Utilities */,
 				2615BACB2B347BBC00B14AA2 /* HabitsApp.swift */,
-				2615BACD2B347BBC00B14AA2 /* HabitView.swift */,
 				2615BACF2B347BBC00B14AA2 /* Item.swift */,
+				2615BB022B3485B200B14AA2 /* View Model */,
 				2615BAD12B347BBD00B14AA2 /* Assets.xcassets */,
 				2615BAD32B347BBD00B14AA2 /* Preview Content */,
 			);
@@ -150,6 +153,22 @@
 				2615BB002B34822E00B14AA2 /* EmmasHabits.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		2615BB022B3485B200B14AA2 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				2615BB042B3485F300B14AA2 /* ViewModel.swift */,
+			);
+			name = "View Model";
+			sourceTree = "<group>";
+		};
+		2615BB032B3485D200B14AA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2615BACD2B347BBC00B14AA2 /* HabitView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +305,7 @@
 				2615BB012B34822E00B14AA2 /* EmmasHabits.swift in Sources */,
 				2615BAD02B347BBC00B14AA2 /* Item.swift in Sources */,
 				2615BAF92B347DA100B14AA2 /* Habit.swift in Sources */,
+				2615BB052B3485F300B14AA2 /* ViewModel.swift in Sources */,
 				2615BACC2B347BBC00B14AA2 /* HabitsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

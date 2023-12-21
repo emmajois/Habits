@@ -12,7 +12,7 @@ import SwiftData
 struct HabitsApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Habit.self, HabitCategory.self
+            Habit.self, HabitCategory.self, HabitTiming.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
