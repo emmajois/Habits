@@ -9,7 +9,7 @@ import Foundation
 
 let emmaSampleHabits = [
     Habit(
-        title: "Walk",
+        title: "Go for a Walk",
         habitDescription: "Walk for at least 30 minutes",
         isCompleted: false,
         lastCompletedDate: Date.now,

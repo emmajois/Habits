@@ -23,7 +23,7 @@ struct HabitView: View {
             List {
                 Section(header: Text("Habit Lists")) {
                     NavigationLink {
-                        HabitListView()
+                        HabitListView(habitList: viewModel.habits)
                     } label: {
                         Text("Browse All")
                     }
@@ -34,7 +34,7 @@ struct HabitView: View {
                             if category.habits == [] {
                                 Text("No habits under \(category.categoryName)")
                             } else {
-                                HabitListView()
+                                HabitListView(habitList: viewModel.habits.filter{$0.categories.contains(where: {$0.categoryName == category.categoryName})})
                             }
                         } label: {
                             Text(category.categoryName)
@@ -45,9 +45,9 @@ struct HabitView: View {
                     ForEach(viewModel.timings) { timing in
                         NavigationLink {
                             if timing.habits == [] {
-                                Text("No \(timing.timingName) habits")
+                                Text("No \(timing.timingName) Habits")
                             } else {
-                                HabitListView()
+                                HabitListView(habitList: viewModel.habits.filter{$0.timePeriods.contains(where: {$0.timingName == timing.timingName})})
                             }
                         } label: {
                             Text(timing.timingName)
@@ -55,18 +55,10 @@ struct HabitView: View {
                     }
                 }
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-//                    Button(action: addItem) {
-//                        Label("Add Item", systemImage: "plus")
-//                    }
-                }
-            }
+        } content: {
+            HabitListView(habitList: viewModel.habits)
         } detail: {
-            Text("Select an item")
+            Text("Select a habit")
         }
         .alert(isPresented: $hasError) {
             Alert(
@@ -86,22 +78,8 @@ struct HabitView: View {
                 }
             }
         }
+        .environment(viewModel)
     }
-
-//    private func addItem() {
-//        withAnimation {
-//            let newItem = Item(timestamp: Date())
-//            modelContext.insert(newItem)
-//        }
-//    }
-
-//    private func deleteItems(offsets: IndexSet) {
-//        withAnimation {
-//            for index in offsets {
-//                modelContext.delete(items[index])
-//            }
-//        }
-//    }
 }
 
 #Preview {

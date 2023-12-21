@@ -19,6 +19,7 @@
 		2615BB012B34822E00B14AA2 /* EmmasHabits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB002B34822E00B14AA2 /* EmmasHabits.swift */; };
 		2615BB052B3485F300B14AA2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB042B3485F300B14AA2 /* ViewModel.swift */; };
 		2615BB072B348EA800B14AA2 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB062B348EA800B14AA2 /* HabitListView.swift */; };
+		2615BB092B3492A900B14AA2 /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB082B3492A900B14AA2 /* HabitDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		2615BB002B34822E00B14AA2 /* EmmasHabits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmasHabits.swift; sourceTree = "<group>"; };
 		2615BB042B3485F300B14AA2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2615BB062B348EA800B14AA2 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
+		2615BB082B3492A900B14AA2 /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				2615BACD2B347BBC00B14AA2 /* HabitView.swift */,
 				2615BB062B348EA800B14AA2 /* HabitListView.swift */,
+				2615BB082B3492A900B14AA2 /* HabitDetailView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				2615BAF92B347DA100B14AA2 /* Habit.swift in Sources */,
 				2615BB052B3485F300B14AA2 /* ViewModel.swift in Sources */,
 				2615BACC2B347BBC00B14AA2 /* HabitsApp.swift in Sources */,
+				2615BB092B3492A900B14AA2 /* HabitDetailView.swift in Sources */,
 				2615BB072B348EA800B14AA2 /* HabitListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
