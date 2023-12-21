@@ -13,7 +13,7 @@ let emmaSampleHabits = [
         habitDescription: "Walk for at least 30 minutes",
         isCompleted: false,
         lastCompletedDate: Date.now,
-        nextCompletedDate: Date.now + 1,
+        nextCompletedDate: Date.now,
         timePeriods: [],
         categories: []
     ),
@@ -22,7 +22,7 @@ let emmaSampleHabits = [
         habitDescription: "Read scriptures for at least 15 minutes",
         isCompleted: true, 
         lastCompletedDate: Date.now,
-        nextCompletedDate: Date.now + 1,
+        nextCompletedDate: Date.now,
         timePeriods: [],
         categories: []
     )
@@ -41,11 +41,11 @@ let baseTimings = [
 ]
 
 let sampleAssociationCategory = [
-    ("Walk", "Health"),
+    ("Go for a Walk", "Health"),
     ("Read Scriptures", "Spiritual")
 ]
 
 let sampleAssociationTiming = [
-    ("Walk", "Daily"),
+    ("Go for a Walk", "Daily"),
     ("Read Scriptures", "Daily")
 ]

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HabitDetailView: View {
-   //@Environment (ViewModel.self) private var viewModel
+   @Environment (ViewModel.self) private var viewModel
     
     var habit: Habit
     
@@ -77,7 +77,7 @@ struct HabitDetailView: View {
     private func toggleIsCompleted() {
         habit.isCompleted.toggle()
         
-        //viewModel.saveData()
+        viewModel.saveData()
     }
     
     private func deleteCategory(categoryToDelete: HabitCategory) {
@@ -85,7 +85,7 @@ struct HabitDetailView: View {
             category == categoryToDelete
         }
         
-       // viewModel.saveData()
+        viewModel.saveData()
     }
     
     private func deleteTiming(timingToDelete: HabitTiming) {
@@ -93,7 +93,7 @@ struct HabitDetailView: View {
             timing == timingToDelete
         }
         
-       // viewModel.saveData()
+        viewModel.saveData()
     }
 }
 

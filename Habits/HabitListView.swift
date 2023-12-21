@@ -37,6 +37,9 @@ struct HabitListView: View {
                 Button(action: openHabitCreationSheet) {
                     Label("Add Habit", systemImage: "plus")
                 }
+                .sheet(isPresented: $showingHabitCreationSheet, content: {
+                    HabitCreationView(habit: nil)
+                })
             }
         }
     }

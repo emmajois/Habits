@@ -20,6 +20,9 @@
 		2615BB052B3485F300B14AA2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB042B3485F300B14AA2 /* ViewModel.swift */; };
 		2615BB072B348EA800B14AA2 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB062B348EA800B14AA2 /* HabitListView.swift */; };
 		2615BB092B3492A900B14AA2 /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB082B3492A900B14AA2 /* HabitDetailView.swift */; };
+		2615BB0B2B34A10200B14AA2 /* HabitCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB0A2B34A10200B14AA2 /* HabitCreationView.swift */; };
+		2615BB0D2B34A34A00B14AA2 /* MultiSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB0C2B34A34A00B14AA2 /* MultiSelector.swift */; };
+		2615BB0F2B34A37800B14AA2 /* MultiSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2615BB0E2B34A37800B14AA2 /* MultiSelectorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		2615BB042B3485F300B14AA2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2615BB062B348EA800B14AA2 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
 		2615BB082B3492A900B14AA2 /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
+		2615BB0A2B34A10200B14AA2 /* HabitCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCreationView.swift; sourceTree = "<group>"; };
+		2615BB0C2B34A34A00B14AA2 /* MultiSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelector.swift; sourceTree = "<group>"; };
+		2615BB0E2B34A37800B14AA2 /* MultiSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				2615BB002B34822E00B14AA2 /* EmmasHabits.swift */,
+				2615BB0C2B34A34A00B14AA2 /* MultiSelector.swift */,
+				2615BB0E2B34A37800B14AA2 /* MultiSelectorView.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 				2615BACD2B347BBC00B14AA2 /* HabitView.swift */,
 				2615BB062B348EA800B14AA2 /* HabitListView.swift */,
 				2615BB082B3492A900B14AA2 /* HabitDetailView.swift */,
+				2615BB0A2B34A10200B14AA2 /* HabitCreationView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -310,8 +319,11 @@
 				2615BACE2B347BBC00B14AA2 /* HabitView.swift in Sources */,
 				2615BB012B34822E00B14AA2 /* EmmasHabits.swift in Sources */,
 				2615BAD02B347BBC00B14AA2 /* Item.swift in Sources */,
+				2615BB0F2B34A37800B14AA2 /* MultiSelectorView.swift in Sources */,
 				2615BAF92B347DA100B14AA2 /* Habit.swift in Sources */,
+				2615BB0B2B34A10200B14AA2 /* HabitCreationView.swift in Sources */,
 				2615BB052B3485F300B14AA2 /* ViewModel.swift in Sources */,
+				2615BB0D2B34A34A00B14AA2 /* MultiSelector.swift in Sources */,
 				2615BACC2B347BBC00B14AA2 /* HabitsApp.swift in Sources */,
 				2615BB092B3492A900B14AA2 /* HabitDetailView.swift in Sources */,
 				2615BB072B348EA800B14AA2 /* HabitListView.swift in Sources */,
