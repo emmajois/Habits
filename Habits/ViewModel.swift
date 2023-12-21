@@ -145,7 +145,7 @@ class ViewModel {
     
     private func fetchTimings() {
         do {
-            let descriptor = FetchDescriptor<HabitTiming>(sortBy: [SortDescriptor(\.timingName)])
+            let descriptor = FetchDescriptor<HabitTiming>(sortBy: [SortDescriptor(\.timingModifier)])
             
             timings = try modelContext.fetch(descriptor)
         } catch {

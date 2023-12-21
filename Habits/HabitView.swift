@@ -21,7 +21,39 @@ struct HabitView: View {
     var body: some View {
         NavigationSplitView {
             List {
-
+                Section(header: Text("Habit Lists")) {
+                    NavigationLink {
+                        HabitListView()
+                    } label: {
+                        Text("Browse All")
+                    }
+                }
+                Section(header: Text("By Category")) {
+                    ForEach(viewModel.categories) { category in
+                        NavigationLink {
+                            if category.habits == [] {
+                                Text("No habits under \(category.categoryName)")
+                            } else {
+                                HabitListView()
+                            }
+                        } label: {
+                            Text(category.categoryName)
+                        }
+                    }
+                }
+                Section(header: Text("By Frequency")) {
+                    ForEach(viewModel.timings) { timing in
+                        NavigationLink {
+                            if timing.habits == [] {
+                                Text("No \(timing.timingName) habits")
+                            } else {
+                                HabitListView()
+                            }
+                        } label: {
+                            Text(timing.timingName)
+                        }
+                    }
+                }
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
